@@ -45,7 +45,7 @@ for (let i = 0; i < bicycles.length ; i++){
     
   }
 }
-console.log("la bici con il peso minore è " + searchedBicycle.name + " e il suo peso è di " + searchedBicycle.weight + "kg");
+//console.log("la bici con il peso minore è " + searchedBicycle.name + " e il suo peso è di " + searchedBicycle.weight + "kg");
 
 
 //! ESERCIZIO 2
@@ -70,4 +70,30 @@ const teams =[
     {name: "team5",
      goals: 0,
      foulPlay:0}]
+
+     //funzione numeri random
+function generateRandomNumbers(min, max){
+   let randomNumber =Math.floor(Math.random() * (max - min +1)+ min);
+   return randomNumber;
+}
+
+// associo un valore a goals e foulPlay
+for (let i =0 ; i < teams.length ; i++){
+    singleTeam = teams[i];
+    singleTeam.goals= generateRandomNumbers(0,10);
+    singleTeam.foulPlay= generateRandomNumbers(0,5);
+
+}
+console.log(teams);
+
+const result =[];
+for (let i =0 ; i < teams.length ; i++){
+    singleTeam = teams[i];
+    delete singleTeam.goals;
+    result.push (singleTeam) ;
+
+}
+console.log(result);
+
+
 
