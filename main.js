@@ -15,16 +15,34 @@
 // creazione dell'array di oggetti
 
 const bicycles =[
-    {nome: "bicycle1",
+    {name: "bicycle1",
      weight: 7   
     },
-    {nome: "bicycle2",
+    {name: "bicycle2",
      weight: 10   
     },
-    {nome: "bicycle3",
+    {name: "bicycle3",
      weight: 8   
     },
-    {nome: "bicycle4",
+    {name: "bicycle4",
      weight: 5   
     },
+    {name: "bicycle5",
+        weight: 4.5   
+    }, 
 ]
+
+// ELABORAZIONE
+
+let searchedBicycle = bicycles[0];
+
+for (let i = 0; i < bicycles.length ; i++){
+  if (bicycles[i].weight < searchedBicycle.weight) {
+    searchedBicycle=bicycles[i];
+   // console.log(searchedBicycle);
+    
+  }
+}
+console.log("la bici con il peso minore è " + searchedBicycle.name + " e il suo peso è di " + searchedBicycle.weight + "kg");
+
+
