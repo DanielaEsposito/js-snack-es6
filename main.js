@@ -12,6 +12,8 @@
 //Scrivere una funzione che accetti tre argomenti, un array e due numeri (a più piccolo di b).
 //La funzione ritornerà un nuovo array con i valori che hanno la posizione compresa tra i due numeri.
 
+//! ESERCIZIO 1
+
 // creazione dell'array di oggetti
 
 const bicycles =[
@@ -45,4 +47,27 @@ for (let i = 0; i < bicycles.length ; i++){
 }
 console.log("la bici con il peso minore è " + searchedBicycle.name + " e il suo peso è di " + searchedBicycle.weight + "kg");
 
+
+//! ESERCIZIO 2
+// creazione dell'array di oggetti
+const teams =[
+    {name: "team1",
+     goals:  0,
+     foulPlay:0 
+    },
+    {name: "team2",
+     goals: 0,
+     foulPlay:0   
+    },
+    {name: "team3",
+     goals: 0,
+     foulPlay:0   
+    },
+    {name: "team4",
+     goals:  0,
+     foulPlay:0  
+    },
+    {name: "team5",
+     goals: 0,
+     foulPlay:0}]
 
